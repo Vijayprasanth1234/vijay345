@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content=
+        "width=device-width, initial-scale=1.0">
+    <title>
+        How to make image Gallery Using ,
+        HTML CSS and Javascript?
+    </title>
+
+    <!--Style CSS-->
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+
+<body style="background-image: url(hbg.jpg);">
+    <h2 style="text-align:center;">CHOOSE YOUR PLATFORM</h2>
+    <link rel="stylesheet" href="style2.css">
+    <div class="main">
+        
+        <div class="navbar">
+                
+                <ul>
+                    <li><a href="welcome.html">welcome</a></li>
+                    <li><a href="home.html">HOME</a></li>
+                    
+                    <li><a href="rating.html">RATING</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                  </ul>
+                </div>  
+        </div><br><br>
+    <div class="myProducts">
+        <div class="myProducts-gallery">
+           <a href="https://www.amazon.in/">
+            <img src="Amazon.jpg" alt="click here" 
+                onclick="myImageFunction(this)"></a>
+           <a href="https://www.ajio.com/"> <img src="ajio.png"
+
+                alt="click here"
+                onclick="myImageFunction(this)"></a>
+          <a href="https://www.flipkart.com/">  <img src="flipkart.png"
+                alt="click here" 
+                onclick="myImageFunction(this)"></a>
+           <a href="https://www.bewakoof.com/"> <img src="bewakoof.jpg"
+                alt="click here" 
+                onclick="myImageFunction(this)"></a>
+        </div>
+
+        <div class="image-container">
+            <img id="img-Box" src="Amazon.jpg"  alt="click here">
+          
+        </div>
+    </div>
+
+    <script>
+        function myImageFunction(productSmallImg)
+         {
+            var productFullImg = document.getElementById("img-Box");
+            productFullImg.src = productSmallImg.src;
+        }
+    </script>
+</body>
+
+</html> 
